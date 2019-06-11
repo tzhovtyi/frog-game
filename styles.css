@@ -20,6 +20,26 @@ body {overflow: hidden;}
     align-items: center;
     justify-content: center;
 }
+
+.lily {
+    width: 13%;
+    height: auto;
+    position: absolute;
+    z-index: 2;
+}
+#containerzh {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+#zhaba {
+    width: 65px;
+    height: 60px;
+    z-index: 3;
+    position: relative;
+    top: 82%;
+    left: 45%;
+}
 #containerlr {
     display: flex;
     width: 100%;
