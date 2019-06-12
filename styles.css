@@ -20,12 +20,82 @@ body {overflow: hidden;}
     align-items: center;
     justify-content: center;
 }
+#container1 {
+    width: 90%;
+    height: 95%;
+    position: relative;
+    z-index: 5;
+}
+#question {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
+    width: 90%;
+    height: 50%;
+    border: 3px solid #020122;
+    border-radius: 30px;
+    position: absolute;   
+    z-index: 6;
+    color: black;
+    background: #E8EDDF;    
+}
+#answer {
+    margin-right: 5%;
+    margin-left: 5%;
+    width: 90%;
+    height: 37%;
+    border: 3px solid black;
+    border-radius: 30px;
+    position: absolute;
+    top: 57%;
+    z-index: 6;
+    background: #E8EDDF;
+}
+#containerinput {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50%;
+}
+#ans {
+    width: 60%;
+    height: 30%;
+    padding-left: 2%;
+    margin-left: 2%;
+    margin-right: 2%;
+    border: 2px solid #086788;
+    text-align: center;
+    font-size: 1.3rem;
+    font-family: 'Press Start 2P';
+}
 
 .lily {
     width: 13%;
     height: auto;
     position: absolute;
     z-index: 2;
+}
+#qs {
+    font-size: 1.1rem;
+    margin-left: 2rem;
+    margin-top: 1.5rem;
+    margin-right: 1rem;
+}
+.butt {
+    padding: 0.55rem 1rem;
+    margin-right: 2%;
+    text-align: center;
+    display: inline-block;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: white; 
+    color: black; 
+    border: 2px solid #086788;
+}
+.butt:hover {
+    background-color: #086788;
+    color: white;
 }
 #containerzh {
     position: relative;
@@ -47,4 +117,9 @@ body {overflow: hidden;}
     position: static;
     background: white;
     z-index: 20;
+}
+#reply {
+    position: absolute;
+    top: 39%;
+    left: 43%;
 }
