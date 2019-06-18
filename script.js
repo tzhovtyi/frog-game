@@ -30,22 +30,58 @@ var e5triggered = true;
         if  ((answer === e1 && e1triggered) || (answer === e12 && e1triggered)){
             document.getElementById("reply").innerText = "good";
             changeQuestion();
+            anime({
+            targets: '#zhaba',
+            easing: 'easeInOutQuad',
+            duration: 800,
+            left: "75%",
+            top: "65%"
+});
             e1triggered = false;
         }   else if ((answer === e2 && e2triggered) || (answer === e22 && e2triggered)) {
             document.getElementById("reply").innerText = "good";
             changeQuestion();  
+            anime({
+            targets: '#zhaba',
+            easing: 'easeInOutQuad',
+            left: "50%",
+            duration: 800,
+            top: "47%",
+});
             e2triggered = false;
         }   else if ((answer === e3 && e3triggered)) {
             document.getElementById("reply").innerText = "good";
             changeQuestion();
+            anime({
+            targets: '#zhaba',
+            easing: 'easeInOutQuad',
+            duration: 800,
+            left: "75%",
+            top: "33%"
+});
             e3triggered = false;
         }   else if ((answer === e4 && e4triggered) || (answer === e42 && e4triggered)) {
             document.getElementById("reply").innerText = "good";
             changeQuestion();
+            anime({
+            targets: '#zhaba',
+            easing: 'easeInOutQuad',
+            duration: 800,
+            left: "40%",
+            top: "20%"
+});
             e4triggered = false;
         }   else if ((answer === e5 && e5triggered) || (answer === e52 && e5triggered) || (answer === e53 && e5triggered) || (answer === e54 && e5triggered)) {
             document.getElementById("reply").innerText = "good";
             changeQuestion();
+            anime({targets: '#zhaba', easing: 'easeInOutQuad', duration: 800, left: "10%", 
+            top: "13%", 
+            rotate: {
+                delay: 270,
+                value: 360,
+                duration: 400,
+                easing: 'easeInOutSine'}
+});
             e5triggered = false;
     }
     else {counter = 1; document.getElementById("reply").innerText = "Wrong!"; location.reload();}
