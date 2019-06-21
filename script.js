@@ -86,3 +86,13 @@ var e5triggered = true;
     }
     else {counter = 1; document.getElementById("reply").innerText = "Wrong!"; location.reload();}
     }
+    function chooseAFrog1() {modal.style.display = "none"; document.getElementById('images').innerHTML = '<img src="hearts.png" alt="image1" style="width: 100%; height: 100%; position: absolute">'}
+    function chooseAFrog2() {modal.style.display = "none"; document.getElementById('images').innerHTML = '<img src="magician.png" alt="image2" style="width: 100%; height: 100%; position: absolute">'}
+    function chooseAFrog3() {modal.style.display = "none"; document.getElementById('images').innerHTML = '<img src="realism.png" alt="image3" style="width: 100%; height: 80%; position: absolute">'}
+    function chooseAFrog4() {modal.style.display = "none"; document.getElementById('images').innerHTML = '<img src="https://image.flaticon.com/icons/png/512/2742/2742178.png" alt="image4" style="width: 100%; height: 100%; position: absolute">'}
+    function chooseAFrog5() {modal.style.display = "none"; document.getElementById('images').innerHTML = '<img src="https://image.flaticon.com/icons/png/512/1808/1808086.png" alt="image5" style="width: 100%; height: 100%; position: absolute">'}
+var modal = document.getElementById("myModal"); // Get the modal
+var btn = document.getElementById("myBtn"); // Get the button that opens the modal
+var span = document.getElementsByClassName("close")[0]; // Get the <span> element that closes the modal
+btn.onclick = function() {modal.style.display = "block";} // When the user clicks on the button, open the modal
+span.onclick = function() {modal.style.display = "none";} // When the user clicks on <span> (x), close the modal

@@ -8,6 +8,7 @@
     <link rel="icon" href="https://i.ibb.co/85x6wBj/frog.png">
     <script src = 'script.js' defer> </script>
     <link href="styles.css" rel="stylesheet">
+    <script src="https://use.fontawesome.com/1aed5f4ba5.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap">
 </head>
@@ -42,10 +43,27 @@
                 <button class="butt" id=butt1 onclick="validateAnswer()">Ответить</button>
             </div>
             <p id="reply"></p>
+            <!-- Trigger/Open The Modal -->
+            <div id="ContainerFrogChoice">
+            <button id="myBtn">Выбор лягушки</button>
+            </div>
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+            <!-- Modal content -->
+                <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <p style="font-size: 2.2rem;">Выберите лягушку:<br><br><br></p>
+                        <div id="choose">
+                                <button class="frogbutton" id="fistfrogbutton" onclick="chooseAFrog1()">Классика</button>        
+                                <button class="frogbutton" id="secondfrogbutton" onclick="chooseAFrog2()">Маг</button>
+                                <button class="frogbutton" id="thirdfrogbutton" onclick="chooseAFrog3()">Реализм</button>
+                                <button class="frogbutton" id="fourthfrogbutton" onclick="chooseAFrog4()">Упоротая</button>
+                                <button class="frogbutton" id="fifthfrogbutton" onclick="chooseAFrog5()">Розовая</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-</div>
-</div>
 <div id="questions">
 <p id="q1">Напишите имя первого князя, которого выгнали бояре Новгородской республики</p>
 <p id="q2">Найдите x: <br>3x(x-1)-17=x(1+3x)+1</p>
