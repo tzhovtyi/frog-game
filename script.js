@@ -96,3 +96,18 @@ var btn = document.getElementById("myBtn"); // Get the button that opens the mod
 var span = document.getElementsByClassName("close")[0]; // Get the <span> element that closes the modal
 btn.onclick = function() {modal.style.display = "block";} // When the user clicks on the button, open the modal
 span.onclick = function() {modal.style.display = "none";} // When the user clicks on <span> (x), close the modal
+var modal2 = document.getElementById("myModal2"); // Get the modal
+var btn2 = document.getElementById("ButtonQuestions"); // Get the button that opens the modal
+var span2 = document.getElementsByClassName("close2")[0]; // Get the <span> element that closes the modal
+btn2.onclick = function() {modal2.style.display = "block";} // When the user clicks on the button, open the modal
+span2.onclick = function() {modal2.style.display = "none";} // When the user clicks on <span> (x), close the modal
+function chooseDifficultyEasy() { 
+    var a = document.getElementById("q1").innerHTML;
+a = "Напишите имя первого князя, которого выгнали бояре Новгородской республики";
+modal2.style.display = "none";
+document.getElementById("q2").innerHTML = "Найдите x: <br> 3x(x-1)-17=x(1+3x)+1";
+document.getElementById("q3").innerHTML = "Сколько всего гендеров? Ответ запишите цифрой";
+document.getElementById("q4").innerHTML = "Какой Шрек лучше? Ответ запишите порядковым числительным";
+document.getElementById("q5").innerHTML = "Напишите параллельный минор соль мажора";
+document.getElementById("qs").innerHTML = a;
+}
