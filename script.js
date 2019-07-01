@@ -252,3 +252,10 @@ document.getElementById("q4").innerHTML = "Who wants their juissy ate?";
 document.getElementById("q5").innerHTML = "Вставьте последнее слово, которое говорящий напевает, строчными буквами:'Ah, nigga, don't hate me 'cause I'm beautiful, nigga. Maybe if you got rid of that old yee-yee ass haircut you got you'd get some bitches on your dick. Oh, better yet, maybe Tanisha'll call your dog-ass if she ever stop fuckin' with that brain surgeon or lawyer she fucking with. _____'";
 document.getElementById("qs").innerHTML = a;
 }
+var input = document.getElementById("ans"); //даня твой код был гавно, а этот работает, но я не понимаю вообще, зачем вот эта строчка, 
+input.addEventListener("keyup", function(event) {  //типа зачем нам var input, у нас все равно кнопка затриггерит функцию, которая свзязна с input, здесь он что вообще делает 
+    if (event.keyCode === 13) {
+        event.preventDefault();
+        document.getElementById("butt1").click();
+    }
+});
