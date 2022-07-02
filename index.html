@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пожабимся?)</title>
+    <link rel="icon" href="https://i.ibb.co/85x6wBj/frog.png">
+    <script src = 'script.js' defer> </script>
+    <link href="styles.css" rel="stylesheet">
+    <script src="https://use.fontawesome.com/1aed5f4ba5.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap">
+</head>
+<body>  
+<div id="containerlr">
+<!--left-->
+    <div id="left">
+        <div id="containerzh">
+            <div id="zhaba"> 
+                <p id="images"><img src="hearts.png" alt="image1" style="width: 100%; height: 100%; position: absolute; z-index: 20;"></p>
+            </div>
+        </div>
+        <img src="lilypad.png" alt="кувщинка1" class="lily" style="left: 20%; top: 79%;">
+        <img src="lilypad.png" alt="кувщинка2" class="lily" style="left: 35%; top: 63%;">
+        <img src="lilypad.png" alt="кувщинка3" class="lily" style="left: 23%; top: 45%;">
+        <img src="lilypad.png" alt="кувщинка6" class="lily" style="left: 36%; top: 30%;">
+        <img src="lilypad.png" alt="кувщинка7" class="lily"style="left: 17%; top: 18%;">
+        <img src="finish.png" alt="опять не работает" style="width: 12%; height: auto; left: 2%; top: 2%; z-index: 1; position: absolute;">
+        <img src="fish.png" alt="рыба" style="width: 8%; height: auto; left: 7%; top: 63%; z-index: 1; position: absolute;">
+    </div>
+<!--right-->
+<div id="right">
+    <div id="container1">
+        <div id="question">
+            <p id="qs">Напишите имя первого князя, которого выгнали бояре Новгородской республики</p>
+            <p id="ifgameover"></p>
+        </div>
+        
+        <div id="answer">
+            <div id="containerinput">
+                <input type="text" autocomplete="off" oninput="this.value=this.value.toLowerCase()" id="ans">
+                <button class="butt" id=butt1 onclick="validateAnswer()">Ответить</button>
+            </div>
+            <p id="reply"></p>
+            <!-- Trigger/Open The Modal -->
+            <div id="ContainerFrogChoice">
+            <button id="myBtn">Выбор лягушки</button>
+            </div>
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+            <!-- Modal content -->
+                <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <p style="font-size: 2.2rem;">Выберите лягушку:<br><br><br></p>
+                        <div id="choose">
+                                <button class="frogbutton" id="fistfrogbutton" onclick="chooseAFrog1()">Классика</button>        
+                                <button class="frogbutton" id="secondfrogbutton" onclick="chooseAFrog2()">Маг</button>
+                                <button class="frogbutton" id="thirdfrogbutton" onclick="chooseAFrog3()">Реализм</button>
+                                <button class="frogbutton" id="fourthfrogbutton" onclick="chooseAFrog4()">Упоротая</button>
+                                <button class="frogbutton" id="fifthfrogbutton" onclick="chooseAFrog5()">Розовая</button>
+                        </div>
+                    </div>
+                </div>
+                <div id="ContainerQuestionsChoice">
+                    <button id="ButtonQuestions">Выбор сложности</button>
+                    </div>
+                    <!-- The Modal -->
+                    <div id="myModal2" class="modal2">
+                        <!-- Modal content -->
+                        <div class="modal-content2">
+                                    <span class="close2">&times;</span>
+                                    <p style="font-size: 2.2rem;">Выберите сложность:<br><br><br></p>
+                                <div id="choose">
+                                        <button class="questionButton" id="easyButton" onclick="chooseDifficultyEasy()">Простые</button>
+                                        <button class="questionButton" id="WWWButton" onclick="chooseDifficultyWWW()">ЧГК</button>
+                                        <button class="questionButton" id="encyclopediaButton" onclick="chooseDifficultyEncyclopedia()">Энциклопедия</button>
+                                        <button class="questionButton" id="riddlesButton" onclick="chooseDifficultyRiddles()">Загадки</button>
+                                        <button class="questionButton" id="IRButton" onclick="chooseDifficultyIR()">Международные отношения</button>
+                                        <button class="questionButton" id="MemesButton" onclick="chooseDifficultyMemes()">Мемы</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+<div id="questions">
+<p id="q1">Напишите имя первого князя, которого выгнали бояре Новгородской республики</p>
+<p id="q2">Найдите x: <br>3x(x-1)-17=x(1+3x)+1</p>
+<p id="q3">Сколько всего гендеров? Ответ запишите цифрой</p>
+<p id="q4">Какой Шрек лучше? Ответ запишите порядковым числительным</p> 
+<p id="q5">Напишите параллельный минор соль мажора строчными буквами</p>
+</div>
+</body>
+</html>
